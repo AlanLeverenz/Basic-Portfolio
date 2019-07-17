@@ -47,7 +47,7 @@ padding-bottom: 12px;
 }
 
 .background {
-background-image: url("assets/images/white-waves.png");
+background-image: url("../../images/white-waves.png");
 height: 600px;
 clear: both;
 position: relative;
@@ -56,7 +56,7 @@ position: relative;
 .about-container {
 position: absolute;
 width: 960px;
-height: 480px;
+height: 500px;
 top: 20px;
 left: 200px;
 background-color: white;

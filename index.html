@@ -1,104 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> <!-- css reset -->
     <title>Alan Leverenz Portfolio</title>
     <meta charset="UTF-8" lang="en/us">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../Basic-Portfolio/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../Basic-Portfolio/assets/css/style.css">
 
-    <style>
-
-        body { 
-                box-sizing: border-box;
-            }
-
-        header {
-            background-color: #ffffff;
-            height: 72px;
-            border-bottom: 2px solid #cccccc;
-            width: 1160px;
-            }
-        
-        section.titlename { 
-            width: 170px;
-            margin-left: 200px;
-            float: left;
-            background-color: #4aaaa5;
-            font-family: "Georgia", Times,'Times New Roman', Times, serif;
-            font-size: 24px;
-            text-align: center;
-            color: #ffffff;
-            padding: 24px; 
-            }
-
-        section.navright {
-            float: right;
-            padding: 30px 0 0 20px;
-            font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-            font-size: 18px;
-            color: #777777; 
-            }
-        
-        section.background {
-            background-image: url("assets/images/white-waves.png");
-            height: 600px;
-            clear: both;
-            position: relative;
-        }
-
-        main.container {
-            position: absolute;
-            width: 960px;
-            height: 480px;
-            top: 20px;
-            left: 200px;
-            background-color: white;
-            border: 2px solid #dddddd;
-            /* box-shadow: 0 0 3px #ccc; */
-        }
-
-        .article-header {
-            float: left;
-            margin-left: 30px;
-            margin-top: 10px;
-            padding-right: 776px;
-            font-family: "Georgia", Times,'Times New Roman', Times, serif;
-            font-size: 24px;
-            color: #4aaaa5;
-            border-bottom: 2px solid #dddddd;
-        }
-
-        .article-content {
-            font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-            font-size: 18px;
-            line-height: 26px;
-            position: absolute;
-            left: 30px;
-            top: 100px;
-            width: 900px;
-            height: 320px;
-            color: #777777; 
-        }
-
-        img.about {
-            float: left;
-            width: 190px;
-            height: 190px;
-            margin: 0 15px 0 0;
-        }
-
-        footer {
-            background-color: #666666;
-            font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-            font-size: 10px;
-            text-align: center;
-            padding: 36px 0 6px 0;
-            color: #eeeeee;
-            border-top: 6px solid #4aaaa5;
-        }
-
-    </style>
 </head>
 
 <body>      <!-- The About Me index page -->
@@ -107,43 +15,39 @@
     
         <section class="titlename">Alan Leverenz</section>
         
-        <nav>   <!-- About, Portfolio, and Contact links on right side (float right) -->
-            <section class="navright">
-                <href="portfolio.html" alt="Contact">Contact</href>
-            </section>
-            <section class="navright">
-                <href="portfolio.html" alt="Portfolio">Portfolio</href>
-            </section>
-            <section class="navright">
-                <href="portfolio.html" alt="About">About</href>
-            </section>
-        </nav>
-            
+           <!-- About, Portfolio, and Contact links on right margin
+                href text decoration turned off, soft grey delimiter -->
+        <nav>
+            <div class="navright">
+                <a href="index.html" alt="About">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="portfolio.html" alt="Portfolio">Portfolio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="contact.html" alt="Contact">Contact</a>
+            </div>
+        </nav>            
     </header>
 
-    <section class="background">        <!-- background image section -->
+    <section class="background">   <!-- background image -->
 
-        <main class="container">        <!-- white container box -->
-
-      <!-- article header and content with floating image -->
-            <article class="article-header">About Me</article>
-
-            <article class="article-content">
-                <p><img class="about" src="assets/images/alan_leverenz.jpg" alt="Alan Leverenz">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
-                <p>Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci.</p>
-                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
-            </content>
-
+        <!-- white container with article header and content sections inside -->
+        <main class="about-container">       
+            
+            <article>
+                <section class="about-header">About Me</section>
+    
+                <section class="about-content">
+                    <p><img class="about-img" src="assets/images/alan_leverenz.jpg" alt="Alan Leverenz">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+                    <p>Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci.</p>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+                </section>
             </article>
 
         </main>
 
     </section>
     
-    <footer>Copyright &#169; 2019
-    </footer>
+    <!-- footer with copyright-->
+    <footer>Copyright &#169; 2019</footer>
 
 </body>
-
 </html>

@@ -155,3 +155,49 @@ button.form {
     display: inline-block;
 }
 
+/*  portfolio image boxes */
+
+.portfolio-box {
+    clear: both;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+    width: 890px;
+    height: 380px;
+    border-top: 3px solid #dddddd;
+}
+
+.portfolio-row1 {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+.portfolio-row2 {
+    position: absolute;
+    top: 220px;
+    left: 0px;
+}
+
+.image-box {
+    margin-right: 20px;
+    float: left;
+}
+
+.banner-text {
+    width: 256px;
+    height: 28px;
+    color: #fff;
+    text-align: center;
+    font-family: "Georgia", Times,'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: #4aaaa5;
+    padding-top: 6px;
+}
+
+.pos {
+    position: relative;
+    top: -50px;
+    margin-right: 20px;
+    z-index: 1;
+}

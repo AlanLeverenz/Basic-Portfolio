@@ -23,6 +23,17 @@ header {
     padding: 24px; 
 }
 
+/* hover image */
+.hidden {
+    float:left;
+    display: none;
+}
+
+.titlename:hover + .hidden {
+    display: block;
+}
+
+
 /* styles for the nav section with links to other pages */
 nav {
     width: 1160px;
@@ -187,11 +198,12 @@ button.form {
 .banner-text {
     width: 256px;
     height: 28px;
-    color: #fff;
+    color:#fff; 
     text-align: center;
     font-family: "Georgia", Times,'Times New Roman', Times, serif;
     font-size: 18px;
     background-color: #4aaaa5;
+    opacity: .9;
     padding-top: 6px;
 }
 
